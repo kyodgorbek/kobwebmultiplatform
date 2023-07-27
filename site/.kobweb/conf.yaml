@@ -1,0 +1,14 @@
+site:
+  title: "KobWebMultiplatform"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/developmentExecutable/kobwebmultiplatform.js"
+      api: "build/libs/kobwebmultiplatform.jar"
+    prod:
+      script: "build/distributions/kobwebmultiplatform.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
