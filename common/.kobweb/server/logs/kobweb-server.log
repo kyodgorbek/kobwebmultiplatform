@@ -1,0 +1,100 @@
+2023-07-27 09:59:59.108 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2023-07-27 09:59:59.137 [main] INFO  ktor.application - API jar found and will be loaded: "build\libs\kobwebmultiplatform.jar"
+2023-07-27 09:59:59.186 [main] INFO  ktor.application - Initializing Kobweb streams.
+2023-07-27 09:59:59.292 [main] INFO  ktor.application - Application started in 0.353 seconds.
+2023-07-27 09:59:59.814 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://127.0.0.1:8081
+2023-07-27 10:06:15.379 [eventLoopGroupProxy-4-2] TRACE relocated/io.ktor.routing.Routing - Trace for []
+/, segment:0 -> SUCCESS @ /
+  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
+  /{...}, segment:0 -> SUCCESS; Parameters [kobweb-params=[]] @ /{...}
+    /{...}/, segment:0 -> SUCCESS @ /{...}/
+      /{...}/(method:GET), segment:0 -> SUCCESS @ /{...}/(method:GET)
+    /{...}/(method:GET), segment:0 -> SUCCESS @ /{...}/(method:GET)
+Matched routes:
+  "" -> "{...}" -> "<slash>" -> "(method:GET)"
+  "" -> "{...}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [kobweb-params=[]] @ /{...}/(method:GET)
+2023-07-27 10:06:15.492 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:15.501 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.compression.Compression - Encoding body using deflate.
+2023-07-27 10:06:15.610 [eventLoopGroupProxy-4-2] TRACE relocated/io.ktor.routing.Routing - Trace for [kobwebmultiplatform.js]
+/, segment:0 -> SUCCESS @ /
+  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
+  /{...}, segment:1 -> SUCCESS; Parameters [kobweb-params=[kobwebmultiplatform.js]] @ /{...}
+    /{...}/, segment:1 -> FAILURE "Selector didn't match" @ /{...}/
+    /{...}/(method:GET), segment:1 -> SUCCESS @ /{...}/(method:GET)
+Matched routes:
+  "" -> "{...}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [kobweb-params=[kobwebmultiplatform.js]] @ /{...}/(method:GET)
+2023-07-27 10:06:15.611 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:15.612 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.compression.Compression - Encoding body using deflate.
+2023-07-27 10:06:17.673 [eventLoopGroupProxy-4-2] TRACE relocated/io.ktor.routing.Routing - Trace for [api, kobweb-status]
+/, segment:0 -> SUCCESS @ /
+  /api, segment:1 -> SUCCESS @ /api
+    /api/kobweb-status, segment:2 -> SUCCESS @ /api/kobweb-status
+      /api/kobweb-status/(method:GET), segment:2 -> SUCCESS @ /api/kobweb-status/(method:GET)
+    /api/{...}, segment:1 -> FAILURE "Better match was already found" @ /api/{...}
+    /api/kobweb-streams, segment:1 -> FAILURE "Selector didn't match" @ /api/kobweb-streams
+  /{...}, segment:0 -> FAILURE "Better match was already found" @ /{...}
+Matched routes:
+  "" -> "api" -> "kobweb-status" -> "(method:GET)"
+Route resolve result:
+  SUCCESS @ /api/kobweb-status/(method:GET)
+2023-07-27 10:06:17.674 [eventLoopGroupProxy-4-2] DEBUG ktor.application - Client connected and is requesting kobweb status events.
+2023-07-27 10:06:17.681 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:17.682 [eventLoopGroupProxy-4-2] TRACE r.k.s.p.compression.Compression - Skip compression because preconditions doesn't meet.
+2023-07-27 10:06:40.228 [eventLoopGroupProxy-4-3] TRACE relocated/io.ktor.routing.Routing - Trace for []
+/, segment:0 -> SUCCESS @ /
+  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
+  /{...}, segment:0 -> SUCCESS; Parameters [kobweb-params=[]] @ /{...}
+    /{...}/, segment:0 -> SUCCESS @ /{...}/
+      /{...}/(method:GET), segment:0 -> SUCCESS @ /{...}/(method:GET)
+    /{...}/(method:GET), segment:0 -> SUCCESS @ /{...}/(method:GET)
+Matched routes:
+  "" -> "{...}" -> "<slash>" -> "(method:GET)"
+  "" -> "{...}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [kobweb-params=[]] @ /{...}/(method:GET)
+2023-07-27 10:06:40.229 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:40.230 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.compression.Compression - Encoding body using deflate.
+2023-07-27 10:06:40.253 [eventLoopGroupProxy-4-3] TRACE relocated/io.ktor.routing.Routing - Trace for [kobwebmultiplatform.js]
+/, segment:0 -> SUCCESS @ /
+  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
+  /{...}, segment:1 -> SUCCESS; Parameters [kobweb-params=[kobwebmultiplatform.js]] @ /{...}
+    /{...}/, segment:1 -> FAILURE "Selector didn't match" @ /{...}/
+    /{...}/(method:GET), segment:1 -> SUCCESS @ /{...}/(method:GET)
+Matched routes:
+  "" -> "{...}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [kobweb-params=[kobwebmultiplatform.js]] @ /{...}/(method:GET)
+2023-07-27 10:06:40.254 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:40.254 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.compression.Compression - Encoding body using deflate.
+2023-07-27 10:06:40.857 [eventLoopGroupProxy-4-2] DEBUG ktor.application - Stopped sending kobweb status events, probably because client disconnected or server is shutting down. (ChannelWriteException: Cannot write to a channel)
+2023-07-27 10:06:40.993 [eventLoopGroupProxy-4-3] TRACE relocated/io.ktor.routing.Routing - Trace for [api, kobweb-status]
+/, segment:0 -> SUCCESS @ /
+  /api, segment:1 -> SUCCESS @ /api
+    /api/kobweb-status, segment:2 -> SUCCESS @ /api/kobweb-status
+      /api/kobweb-status/(method:GET), segment:2 -> SUCCESS @ /api/kobweb-status/(method:GET)
+    /api/{...}, segment:1 -> FAILURE "Better match was already found" @ /api/{...}
+    /api/kobweb-streams, segment:1 -> FAILURE "Selector didn't match" @ /api/kobweb-streams
+  /{...}, segment:0 -> FAILURE "Better match was already found" @ /{...}
+Matched routes:
+  "" -> "api" -> "kobweb-status" -> "(method:GET)"
+Route resolve result:
+  SUCCESS @ /api/kobweb-status/(method:GET)
+2023-07-27 10:06:40.993 [eventLoopGroupProxy-4-3] DEBUG ktor.application - Client connected and is requesting kobweb status events.
+2023-07-27 10:06:40.993 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:40.993 [eventLoopGroupProxy-4-3] TRACE r.k.s.p.compression.Compression - Skip compression because preconditions doesn't meet.
+2023-07-27 10:06:41.002 [eventLoopGroupProxy-4-4] TRACE relocated/io.ktor.routing.Routing - Trace for [favicon.ico]
+/, segment:0 -> SUCCESS @ /
+  /api, segment:0 -> FAILURE "Selector didn't match" @ /api
+  /{...}, segment:1 -> SUCCESS; Parameters [kobweb-params=[favicon.ico]] @ /{...}
+    /{...}/, segment:1 -> FAILURE "Selector didn't match" @ /{...}/
+    /{...}/(method:GET), segment:1 -> SUCCESS @ /{...}/(method:GET)
+Matched routes:
+  "" -> "{...}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [kobweb-params=[favicon.ico]] @ /{...}/(method:GET)
+2023-07-27 10:06:41.004 [eventLoopGroupProxy-4-4] TRACE r.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2023-07-27 10:06:41.005 [eventLoopGroupProxy-4-4] TRACE r.k.s.p.compression.Compression - Encoding body using deflate.

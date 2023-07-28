@@ -35,12 +35,16 @@ kotlin {
                 implementation(libs.kobweb.core)
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
+
+                implementation(project(":common"))
                 // implementation(libs.kobwebx.markdown)
             }
         }
         val jvmMain by getting {
             dependencies {
                 implementation(libs.kobweb.api)
+                implementation(libs.kotlinx.serialization)
+                implementation(project(":common"))
             }
         }
     }
